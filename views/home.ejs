@@ -24,10 +24,10 @@
     <%- include('./partials/nav') %> 
     
     <div class="container mt-3">
-      <div class="row row-cols-3">
+      <div class="row g-4"> <!-- g-4 adds gutter spacing -->
         <% blogs.forEach(blog => { %>
-          <div class="col">  
-            <div class="card" style="width: 18rem;">
+          <div class="col-12 col-sm-6 col-md-4"> <!-- Responsive columns -->
+            <div class="card">
                 <div class="card-img-wrapper">
                     <img src="<%= blog.coverImageURL %>" class="card-img-top" alt="...">
                 </div>
