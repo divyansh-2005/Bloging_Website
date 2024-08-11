@@ -9,7 +9,7 @@ const Blog = require('./models/blog')
 
 const { checkForAuthenticationCookie } = require("./middlewares/auth")
 const app = express()
-const PORT = process.env.PORT
+const PORT = process.env.PORT || 8000
 const MONGO_URL = process.env.MONGO_URL
 
 mongoose.connect(MONGO_URL)
